@@ -1,4 +1,51 @@
-h1 {
-  color: green; }
+.jumbotron {
+  background-image: url("../assets/img/main.jpg");
+  background-size: cover;
+  color: #fff;
+  height: 100vh; }
+  .jumbotron nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between;
+    padding: 20px 50px; }
+    .jumbotron nav .logo {
+      font-size: 1.5rem; }
+      @media all and (max-width: 767px) {
+        .jumbotron nav .logo {
+          flex-basis: 100%;
+          margin-bottom: 10px;
+          text-align: center; } }
+    .jumbotron nav .nav-links {
+      display: flex;
+      font-size: 1.1rem;
+      justify-content: space-around; }
+      @media all and (max-width: 767px) {
+        .jumbotron nav .nav-links {
+          flex-basis: 100%;
+          text-align: center; } }
+      .jumbotron nav .nav-links a {
+        color: inherit;
+        margin: 10px;
+        text-decoration: none; }
+  .jumbotron main {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 260px;
+    text-align: center; }
+    .jumbotron main h1 {
+      font-size: 3rem;
+      margin-bottom: 20px; }
+    .jumbotron main p {
+      margin-bottom: 15px; }
+    .jumbotron main button {
+      background: #3c4ba5;
+      border-color: #3c4ba5;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 13px 20px;
+      width: 191px; }
 
 /*# sourceMappingURL=styles.css.map */

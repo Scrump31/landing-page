@@ -1,3 +1,73 @@
-h1 {
-  color: green;
+@import 'variables';
+
+// Jumbotron
+.jumbotron {
+  background-image: url('../assets/img/main.jpg');
+  background-size: cover;
+  color: $white;
+  height: 100vh;
+
+  // Nav Bar
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between;
+    padding: 20px 50px;
+
+    .logo {
+      font-size: 1.5rem;
+      @media all and (max-width: 767px) {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+       }
+    }
+
+    .nav-links {
+      display: flex;
+      font-size: 1.1rem;
+      justify-content: space-around;
+      @media all and (max-width: 767px) {
+        flex-basis: 100%;
+        text-align: center;
+       }
+
+      a {
+        color: inherit;
+        margin: 10px;
+        text-decoration: none;
+
+      }
+    }
+  }
+
+  // Main
+  main {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 260px;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: $contact-us;
+      border-color: $contact-us;
+      border-radius: 5px;
+      color: $white;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 13px 20px;
+      width: 191px;
+    }
+  }
 }
