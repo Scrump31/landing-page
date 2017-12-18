@@ -3,7 +3,7 @@
   background-size: cover;
   color: #fff;
   height: 100vh; }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 812px) {
     .jumbotron {
       height: 700px; } }
   .jumbotron nav {
@@ -54,14 +54,14 @@
 
 .destinations {
   color: #414a4f;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2; }
   .destinations header {
     padding-bottom: 50px;
     padding-top: 100px;
     text-align: center; }
     .destinations header h1 {
-      font-size: 2rem;
-      margin-bottom: 20px; }
+      font-size: 2rem; }
     .destinations header p {
       margin: auto;
       max-width: 500px;
@@ -86,14 +86,14 @@
   color: #414a4f;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  line-height: 2;
   padding-bottom: 120px; }
   .features-services header {
     padding-bottom: 50px;
     padding-top: 120px;
     text-align: center; }
     .features-services header h1 {
-      font-size: 2rem;
-      margin-bottom: 20px; }
+      font-size: 2rem; }
     .features-services header p {
       margin: auto;
       max-width: 500px;
@@ -127,12 +127,13 @@
   color: #414a4f;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  line-height: 2;
   margin: auto;
   max-width: 800px;
   padding: 20px 5px;
   text-align: center; }
   .testimonials header {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-top: 120px;
     text-align: center; }
     .testimonials header h1 {
@@ -154,5 +155,53 @@
   .testimonials .testimonial-list .author {
     color: #555;
     margin-bottom: 20px; }
+
+.learn-more {
+  background-color: #f7f7f7;
+  color: #414a4f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  padding-bottom: 120px; }
+  .learn-more header {
+    padding: 120px 2.5% 50px;
+    text-align: center; }
+    .learn-more header h1 {
+      font-size: 2rem; }
+    .learn-more header p {
+      margin: auto;
+      max-width: 800px;
+      padding: 20px 0; }
+    .learn-more header .line {
+      border-bottom: 2px solid #3c4ba5;
+      display: inline-block;
+      width: 220px; }
+  .learn-more form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 800px;
+    padding: 0 1.5%; }
+    .learn-more form input {
+      color: #414a4f;
+      flex: 1;
+      font-size: 18px;
+      margin-right: 30px;
+      padding: 15px; }
+      @media all and (max-width: 414px) {
+        .learn-more form input {
+          margin: 0; } }
+    .learn-more form a {
+      background-color: #3c4ba5;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 800;
+      padding: 10px 42px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase; }
+      @media all and (max-width: 414px) {
+        .learn-more form a {
+          margin: 20px auto; } }
 
 /*# sourceMappingURL=styles.css.map */
