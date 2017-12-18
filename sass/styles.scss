@@ -77,6 +77,9 @@
 }
 
 .destinations {
+  color: $light-black;
+  font-family: 'Open Sans', sans-serif;
+
   header {
     padding-bottom: 50px;
     padding-top: 100px;
@@ -117,7 +120,11 @@
 
 .features-services {
   background-color: $gray;
+  color: $light-black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
   padding-bottom: 120px;
+
 
   header {
     padding-bottom: 50px;
@@ -156,6 +163,7 @@
       text-align: center;
       @media all and (max-width: 414px) {
         flex-basis: 100%;
+        padding: 0 1.5% 20px;
       }
 
       i {
@@ -167,6 +175,55 @@
         margin-bottom: 25px;
       }
 
+    }
+  }
+
+}
+
+.testimonials {
+  color: $light-black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px 5px;
+  text-align: center;
+
+
+  header {
+    padding-bottom: 50px;
+    padding-top: 120px;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: auto;
+      max-width: 500px;
+      padding: 20px 0;
+    }
+
+    .line {
+      border-bottom: 2px solid $blue;
+      display: inline-block;
+      width: 220px;
+    }
+  }
+
+  .testimonial-list {
+    .quote {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      padding: 0 1.5%;
+    }
+
+    .author {
+      color: $author;
+      margin-bottom: 20px;
     }
   }
 
