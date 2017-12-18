@@ -204,4 +204,22 @@
         .learn-more form a {
           margin: 20px auto; } }
 
+footer {
+  align-items: center;
+  background-color: #567381;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: space-around;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase; }
+  footer p {
+    line-height: 2;
+    padding: 5px 10px; }
+  footer .social-links i {
+    color: #fff;
+    margin: 0 5px; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -292,3 +292,30 @@
     }
   }
 }
+
+footer {
+  align-items: center;
+  background-color: $footer;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: space-around;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  p {
+    line-height: 2;
+    padding: 5px 10px;
+  }
+
+  .social-links {
+    i {
+      color: $white;
+      margin: 0 5px;
+    }
+  }
+
+
+}
