@@ -60,7 +60,7 @@
 
     p {
       margin: 0 1%;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
 
     button {
@@ -94,7 +94,7 @@
     }
 
     .line {
-      border-bottom: 3px solid $blue;
+      border-bottom: 2px solid $blue;
       display: inline-block;
       width: 220px;
     }
@@ -104,6 +104,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 100px;
     @media all and (max-width: 767px) {
       flex-direction: column;
     }
@@ -112,4 +113,61 @@
       padding: 1.5%;
     }
   }
+}
+
+.features-services {
+  background-color: $gray;
+  padding-bottom: 120px;
+
+  header {
+    padding-bottom: 50px;
+    padding-top: 120px;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: auto;
+      max-width: 500px;
+      padding: 20px 0;
+    }
+
+    .line {
+      border-bottom: 2px solid $blue;
+      display: inline-block;
+      width: 220px;
+    }
+  }
+
+  main {
+    display: flex;
+    @media all and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature {
+      flex-basis: 33%;
+      padding: 0 30px;
+      padding-bottom: 20px;
+      text-align: center;
+      @media all and (max-width: 414px) {
+        flex-basis: 100%;
+      }
+
+      i {
+        color: $blue;
+      }
+
+      h4 {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+
+    }
+  }
+
 }
