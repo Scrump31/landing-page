@@ -3,6 +3,9 @@
   background-size: cover;
   color: #fff;
   height: 100vh; }
+  @media all and (max-width: 768px) {
+    .jumbotron {
+      height: 700px; } }
   .jumbotron nav {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +40,7 @@
       font-size: 3rem;
       margin-bottom: 20px; }
     .jumbotron main p {
+      margin: 0 1%;
       margin-bottom: 15px; }
     .jumbotron main button {
       background: #3c4ba5;
@@ -47,5 +51,30 @@
       font-size: 1rem;
       padding: 13px 20px;
       width: 191px; }
+
+.destinations header {
+  padding-bottom: 50px;
+  padding-top: 100px;
+  text-align: center; }
+  .destinations header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px; }
+  .destinations header p {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px 0; }
+  .destinations header .line {
+    border-bottom: 3px solid #3c4ba5;
+    display: inline-block;
+    width: 220px; }
+.destinations main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media all and (max-width: 767px) {
+    .destinations main {
+      flex-direction: column; } }
+  .destinations main img {
+    padding: 1.5%; }
 
 /*# sourceMappingURL=styles.css.map */
