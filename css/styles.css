@@ -1,3 +1,65 @@
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0); } }
+@keyframes rotate-in {
+  from {
+    transform: rotate3d(0, 0, 1, -720deg);
+    transform-origin: center; }
+  to {
+    transform: none;
+    transform-origin: center; } }
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes bounce-in-up {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    transform: translate3d(0, -5px, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
 .jumbotron {
   background-image: url("../assets/img/main.jpg");
   background-size: cover;
@@ -32,6 +94,7 @@
         margin: 10px;
         text-decoration: none; }
   .jumbotron main {
+    animation: fade-in-up 1s linear;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     margin-top: 260px;
@@ -80,6 +143,10 @@
         flex-direction: column; } }
     .destinations main img {
       padding: 1.5%; }
+    .destinations main .left {
+      animation: fade-in-left 2s; }
+    .destinations main .right {
+      animation: fade-in-right 2s; }
 
 .features-services {
   background-color: #f7f7f7;
@@ -118,6 +185,7 @@
           flex-basis: 100%;
           padding: 0 1.5% 20px; } }
       .features-services main .feature i {
+        animation: rotate-in 1s linear;
         color: #3c4ba5; }
       .features-services main .feature h4 {
         font-size: 20px;
@@ -147,14 +215,16 @@
       border-bottom: 2px solid #3c4ba5;
       display: inline-block;
       width: 220px; }
-  .testimonials .testimonial-list .quote {
-    font-size: 22px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0 1.5%; }
-  .testimonials .testimonial-list .author {
-    color: #555;
-    margin-bottom: 20px; }
+  .testimonials .testimonial-list {
+    animation: bounce-in-up 1.5s linear; }
+    .testimonials .testimonial-list .quote {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      padding: 0 1.5%; }
+    .testimonials .testimonial-list .author {
+      color: #555;
+      margin-bottom: 20px; }
 
 .learn-more {
   background-color: #f7f7f7;
@@ -177,6 +247,7 @@
       display: inline-block;
       width: 220px; }
   .learn-more form {
+    animation: shake 1s linear 1s;
     display: flex;
     flex-wrap: wrap;
     margin: auto;

@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
     </div>
   </nav>
 
-  <main>
+  <main class="wow">
     <h1>Mountain Travel</h1>
     <p>Unmissable Adventure Tours Around The World</p>
     <button type="button" name="button">CONTACT US NOW</button>
@@ -40,10 +41,10 @@
     <hr class="line"></hr>
   </header>
   <main>
-    <img src="./assets/img/mountain1.jpg" alt="mountain scene 1">
-    <img src="./assets/img/mountain2.jpg" alt="mountain scene 2">
-    <img src="./assets/img/mountain3.jpg" alt="mountain scene 3">
-    <img src="./assets/img/mountain4.jpg" alt="mountain scene 4">
+    <img class="wow left" src="./assets/img/mountain1.jpg" alt="mountain scene 1">
+    <img class="wow right" src="./assets/img/mountain2.jpg" alt="mountain scene 2">
+    <img class="wow left" src="./assets/img/mountain3.jpg" alt="mountain scene 3">
+    <img class="wow right" src="./assets/img/mountain4.jpg" alt="mountain scene 4">
   </main>
 </section>
 
@@ -59,7 +60,7 @@
     </header>
     <main>
       <div class="feature">
-        <i class="fa fa-compass fa-3x"></i>
+        <i class="fa fa-compass fa-3x wow"></i>
         <h4>Guided Trips</h4>
         <p class="lead">
           Vestibulum tellus ligula, eleifend a justo nec,
@@ -68,7 +69,7 @@
         </p>
       </div>
       <div class="feature">
-        <i class="fa fa-camera-retro fa-3x"></i>
+        <i class="fa fa-camera-retro fa-3x wow"></i>
         <h4>Photo Trips</h4>
         <p class="lead">
           Vestibulum tellus ligula, eleifend a justo nec,
@@ -77,7 +78,7 @@
         </p>
       </div>
       <div class="feature">
-        <i class="fa fa-bicycle fa-3x"></i>
+        <i class="fa fa-bicycle fa-3x wow"></i>
         <h4>Biking Trips</h4>
         <p class="lead">
           Vestibulum tellus ligula, eleifend a justo nec,
@@ -86,7 +87,7 @@
         </p>
       </div>
       <div class="feature">
-        <i class="fa fa-flag-checkered fa-3x"></i>
+        <i class="fa fa-flag-checkered fa-3x wow"></i>
         <h4>Racing Trips</h4>
         <p class="lead">
           Vestibulum tellus ligula, eleifend a justo nec,
@@ -102,7 +103,7 @@
       <h1>Testimonials From Our Adventurers</h1>
       <hr class="line"></hr>
   </header>
-    <div class="testimonial-list">
+    <div class="testimonial-list wow">
       <p class="quote">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Morbi viverra lacus a neque vulputate viverra. Sed fringilla
@@ -136,7 +137,7 @@
       </p>
       <hr class="line"></hr>
   </header>
-  <form>
+  <form class="wow">
 		<input type="email" placeholder="Email">
 		<a href="#">Subscribe now</a>
 	</form>
@@ -154,6 +155,9 @@
     <a href="#"><i class="fa fa-snapchat-square fa-3x"></i></a>
   </div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" charset="utf-8"></script>
+<script>
+  new WOW({ mobile: false }).init();
+</script>
 </body>
 </html>

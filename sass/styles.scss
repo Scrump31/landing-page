@@ -1,6 +1,6 @@
 @import 'variables';
+@import 'animations';
 
-// Jumbotron
 .jumbotron {
   background-image: url('../assets/img/main.jpg');
   background-size: cover;
@@ -10,7 +10,6 @@
     height: 700px;
   }
 
-  // Nav Bar
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -40,14 +39,12 @@
         color: inherit;
         margin: 10px;
         text-decoration: none;
-
       }
     }
   }
 
-  // Main
   main {
-
+    animation: fade-in-up 1s linear;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     margin-top: 260px;
@@ -115,6 +112,15 @@
     img {
       padding: 1.5%;
     }
+
+    .left {
+      animation: fade-in-left 2s;
+
+    }
+
+    .right {
+      animation: fade-in-right 2s;
+    }
   }
 }
 
@@ -167,6 +173,7 @@
       }
 
       i {
+        animation: rotate-in 1s linear;
         color: $blue;
       }
 
@@ -214,6 +221,8 @@
   }
 
   .testimonial-list {
+    animation: bounce-in-up 1.5s linear;
+
     .quote {
       font-size: 22px;
       line-height: 1.5;
@@ -258,6 +267,7 @@
   }
 
   form {
+    animation: shake 1s linear 1s;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
